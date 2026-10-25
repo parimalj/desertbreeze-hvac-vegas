@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desert Breeze AC & Heating | 24/7 HVAC Service in Las Vegas</title>
+  <meta name="description" content="Fast, honest air conditioning repair, freon recharge, seasonal tune-ups, and complete HVAC replacements across Las Vegas and North Las Vegas.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            hvac: {
+              frost: '#38BDF8',
+              heat: '#F43F5E',
+              dark: '#0B1120',
+              card: '#131D33',
+              border: '#1E2F52'
+            }
+          },
+          fontFamily: {
+            display: ['Space Grotesk', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-hvac-dark text-slate-200 font-sans antialiased selection:bg-hvac-frost selection:text-black">
+
+  <!-- EMERGENCY ALERT BAR -->
+  <div class="bg-gradient-to-r from-rose-600 via-rose-500 to-rose-600 text-white text-xs font-bold py-2.5 px-4 text-center">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <i data-lucide="alert-triangle" class="w-4 h-4 animate-pulse"></i>
+      <span>AC BLOWING WARM AIR IN 100°+ VEGAS HEAT? EMERGENCY SAME-DAY DISPATCH AVAILABLE</span>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-hvac-dark/95 backdrop-blur-md border-b border-hvac-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-400 to-rose-500 flex items-center justify-center text-white shadow-lg shadow-sky-500/20">
+          <i data-lucide="snowflake" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="font-display text-xl sm:text-2xl font-bold text-white leading-none block">DESERT BREEZE</span>
+          <span class="text-[10px] tracking-[0.25em] text-sky-400 uppercase font-bold">AC & Heating</span>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+        <a href="#services" class="hover:text-sky-400 transition-colors">HVAC Solutions</a>
+        <a href="#tuneup" class="hover:text-sky-400 transition-colors">21-Point Tune Up</a>
+        <a href="#reviews" class="hover:text-sky-400 transition-colors">Testimonials</a>
+        <a href="tel:7029005178" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-600/20 border border-rose-500/40 text-rose-400 font-bold hover:bg-rose-600/30">
+          <i data-lucide="phone-call" class="w-4 h-4"></i>
+          (702) 900-5178
+        </a>
+        <button onclick="openBooking()" class="px-5 py-2.5 rounded-lg bg-sky-400 text-black font-extrabold hover:bg-sky-300">
+          Schedule Service
+        </button>
+      </div>
+      <a href="tel:7029005178" class="md:hidden flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-rose-500 text-white text-xs font-bold">
+        <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+        <span>Call (24/7)</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative pt-16 pb-24 border-b border-hvac-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-sky-400/30 bg-sky-500/10 text-sky-400 text-xs font-bold">
+            <i data-lucide="thermometer-snowflake" class="w-4 h-4"></i>
+            <span>FAIR PRICING • NO SURPRISE FEES • EPA CERTIFIED</span>
+          </div>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            Fast AC Repair When You<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-rose-300">Need Cold Air Now.</span>
+          </h1>
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
+            A broken air conditioner during a Nevada heatwave is a health emergency. Desert Breeze diagnoses compressors, replaces blown capacitors, and restores airflow quickly with upfront flat rates.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="tel:7029005178" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-rose-600 text-white font-extrabold text-base hover:bg-rose-500 shadow-xl shadow-rose-600/30 flex items-center justify-center gap-2">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+              <span>Call Technician: (702) 900-5178</span>
+            </a>
+            <button onclick="openBooking()" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-hvac-border bg-hvac-card hover:border-sky-400 text-white font-bold text-base">
+              Book Online
+            </button>
+          </div>
+        </div>
+        <div class="lg:col-span-5 bg-hvac-card p-6 sm:p-8 rounded-2xl border border-hvac-border shadow-2xl">
+          <h3 class="font-display text-2xl font-bold text-white mb-2">Book a Diagnostic Visit</h3>
+          <p class="text-xs text-slate-300 mb-6">Experienced technicians dispatched across Las Vegas.</p>
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="to" value="desertbreezehvacnv@gmail.com">
+            <input type="text" name="name" required placeholder="Full Name" class="w-full px-4 py-2.5 rounded-lg bg-hvac-dark border border-hvac-border text-white text-sm focus:border-sky-400 focus:outline-none">
+            <input type="tel" name="phone" required placeholder="Phone Number" class="w-full px-4 py-2.5 rounded-lg bg-hvac-dark border border-hvac-border text-white text-sm focus:border-sky-400 focus:outline-none">
+            <select name="issue" class="w-full px-4 py-2.5 rounded-lg bg-hvac-dark border border-hvac-border text-slate-300 text-sm focus:border-sky-400 focus:outline-none">
+              <option>No Cold Air / Fan Not Spinning</option>
+              <option>AC Unit Making Loud Buzzing Sound</option>
+              <option>Annual Pre-Summer 21-Point Tune-Up</option>
+              <option>Thermostat or Duct Problem</option>
+            </select>
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-sky-400 text-black font-extrabold text-sm hover:bg-sky-300">
+              Request Fast Dispatch
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUNE UP -->
+  <section id="tuneup" class="py-20 bg-hvac-card/30 border-b border-hvac-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase font-bold tracking-[0.2em] text-sky-400">Prevent Sudden Summer Failures</span>
+        <h2 class="font-display text-3xl font-extrabold text-white mt-1">Our Comprehensive 21-Point Inspection</h2>
+      </div>
+      <div class="grid md:grid-cols-4 gap-6 text-center">
+        <div class="p-6 rounded-xl bg-hvac-card border border-hvac-border">
+          <i data-lucide="activity" class="w-8 h-8 text-sky-400 mx-auto mb-3"></i>
+          <h4 class="font-bold text-white text-sm mb-1">Capacitor Testing</h4>
+          <p class="text-xs text-slate-400">Identify weak starting capacitors before they burst in extreme heat.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-hvac-card border border-hvac-border">
+          <i data-lucide="gauge" class="w-8 h-8 text-sky-400 mx-auto mb-3"></i>
+          <h4 class="font-bold text-white text-sm mb-1">Subcooling & Freon</h4>
+          <p class="text-xs text-slate-400">Precision gauge check of refrigerant levels to prevent compressor lockup.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-hvac-card border border-hvac-border">
+          <i data-lucide="wind" class="w-8 h-8 text-sky-400 mx-auto mb-3"></i>
+          <h4 class="font-bold text-white text-sm mb-1">Condenser Coil Wash</h4>
+          <p class="text-xs text-slate-400">Clear dust and debris from exterior fins to lower your NV Energy power bill.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-hvac-card border border-hvac-border">
+          <i data-lucide="check-circle" class="w-8 h-8 text-sky-400 mx-auto mb-3"></i>
+          <h4 class="font-bold text-white text-sm mb-1">Electrical Contacts</h4>
+          <p class="text-xs text-slate-400">Tighten wiring terminals and check contactor points for pitted contacts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-hvac-card p-6 rounded-2xl border border-hvac-border">
+          <h3 class="font-display text-xl font-bold text-white mb-2">Emergency AC Repair</h3>
+          <p class="text-xs text-slate-300 mb-6">Rapid diagnostics and immediate parts replacement for all major brands (Carrier, Trane, Lennox, Goodman, Rheem).</p>
+          <a href="tel:7029005178" class="text-sky-400 text-xs font-bold flex items-center gap-1">Call Now <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+        </div>
+        <div class="bg-hvac-card p-6 rounded-2xl border border-hvac-border">
+          <h3 class="font-display text-xl font-bold text-white mb-2">Seasonal System Tune-Up</h3>
+          <p class="text-xs text-slate-300 mb-6">Complete spring cooling check and autumn furnace inspection to prolong system life and protect factory warranties.</p>
+          <button onclick="openBooking()" class="text-sky-400 text-xs font-bold flex items-center gap-1">Book Tune-Up <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+        </div>
+        <div class="bg-hvac-card p-6 rounded-2xl border border-hvac-border">
+          <h3 class="font-display text-xl font-bold text-white mb-2">New Unit Replacement</h3>
+          <p class="text-xs text-slate-300 mb-6">High-efficiency 16+ SEER2 installations designed to cut electric expenses by up to 30% during July and August.</p>
+          <button onclick="openBooking()" class="text-sky-400 text-xs font-bold flex items-center gap-1">Get Free Estimate <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="py-20 bg-hvac-card/30 border-t border-hvac-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-3xl font-bold text-white mb-12">What Our Customers Say</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
+        <div class="p-6 bg-hvac-card rounded-xl border border-hvac-border">
+          <p class="text-xs text-slate-300 italic mb-4">"Our unit stopped cooling on a Sunday afternoon when it was 108 degrees outside. Desert Breeze arrived in under 90 minutes, replaced the dual capacitor, and got the house back down to 74."</p>
+          <p class="text-xs font-bold text-sky-400">— Eric T., North Las Vegas</p>
+        </div>
+        <div class="p-6 bg-hvac-card rounded-xl border border-hvac-border">
+          <p class="text-xs text-slate-300 italic mb-4">"Honest mechanics. Another company quoted me $3,500 claiming my whole compressor was dead. Desert Breeze found a loose relay wire and fixed it on the spot."</p>
+          <p class="text-xs font-bold text-sky-400">— Brian M., Las Vegas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 bg-black border-t border-hvac-border text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-slate-400"><strong>Desert Breeze AC & Heating</strong> • Las Vegas Valley, NV</p>
+      <div class="flex items-center gap-4">
+        <a href="mailto:desertbreezehvacnv@gmail.com" class="hover:text-sky-400">desertbreezehvacnv@gmail.com</a>
+        <a href="tel:7029005178" class="text-rose-400 font-bold">(702) 900-5178</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="hvacModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-hvac-card border border-hvac-border rounded-2xl w-full max-w-md p-6 relative">
+      <button onclick="closeBooking()" class="absolute top-4 right-4 text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+      <h3 class="font-display text-xl font-bold text-white mb-2">Schedule HVAC Visit</h3>
+      <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="to" value="desertbreezehvacnv@gmail.com">
+        <input type="text" name="name" required placeholder="Name" class="w-full px-3 py-2 rounded bg-hvac-dark border border-hvac-border text-white text-xs">
+        <input type="tel" name="phone" required placeholder="Phone" class="w-full px-3 py-2 rounded bg-hvac-dark border border-hvac-border text-white text-xs">
+        <input type="text" name="address" placeholder="Address or Neighborhood" class="w-full px-3 py-2 rounded bg-hvac-dark border border-hvac-border text-white text-xs">
+        <button type="submit" class="w-full py-2.5 rounded bg-sky-400 text-black font-bold text-xs hover:bg-sky-300">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+    function openBooking() { document.getElementById('hvacModal').classList.remove('hidden'); document.getElementById('hvacModal').classList.add('flex'); }
+    function closeBooking() { document.getElementById('hvacModal').classList.add('hidden'); document.getElementById('hvacModal').classList.remove('flex'); }
+  </script>
+</body>
+</html>
